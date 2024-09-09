@@ -1,9 +1,11 @@
 .navbar {
     position: absolute;
     right: 0;
-    top: 35px;
+    top: 50px;
     width: 100%;
-    background-color: #ccc;
+    background-color: #ffffff;
+    box-shadow: 0 20px 100px #0000003a;
+    border-radius: 10px;
     &__list {
         list-style-type: none;
         padding: 1rem;
