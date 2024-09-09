@@ -1,0 +1,27 @@
+@use "../../../styles/variables";
+
+.why-easybank {
+    background-color: variables.$Very-Light-Gray;
+    padding: 4.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    &__paragraph {
+        color: variables.$Grayish-Blue;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+}

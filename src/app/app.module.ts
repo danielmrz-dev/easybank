@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { NextGenComponent } from './main/next-gen/next-gen.component';
+import { ButtonComponent } from './button/button.component';
+import { WhyEasebankComponent } from './main/why-easebank/why-easebank.component';
+import { BenefitsComponent } from './main/why-easebank/benefits/benefits.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { NextGenComponent } from './main/next-gen/next-gen.component';
     HeaderComponent,
     NavbarComponent,
     MainComponent,
-    NextGenComponent
+    NextGenComponent,
+    ButtonComponent,
+    WhyEasebankComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,
