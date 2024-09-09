@@ -1,9 +1,13 @@
+@use "../../styles/variables";
+
 .header__container {
-    margin: 1.5rem 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: variables.$White;
     position: relative;
+    z-index: 1;
 }
 
 app-navbar {
