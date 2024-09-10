@@ -16,3 +16,20 @@
         font-size: 0.9rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .benefits {
+        align-items: start;
+        text-align: start;
+        gap: 1.25rem;
+        &__title {
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+        &__paragraph {
+            color: variables.$Grayish-Blue;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+    }
+}

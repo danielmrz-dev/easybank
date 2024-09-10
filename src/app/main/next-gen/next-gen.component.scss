@@ -30,3 +30,49 @@
         padding-bottom: 0.5rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .next-gen {
+        background: url(../../../assets/bg-intro-desktop.svg) center right no-repeat;
+        background-position: 43vw -29vh;
+        margin-bottom: 0;
+        overflow: hidden;
+        &__content {
+            position: relative;
+            max-width: 1140px;
+            min-height: 655px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin: auto;
+        }
+        &__image-mockups {
+            width: 70%;
+            object-fit: contain;
+            position: absolute;
+            right: -300px;
+            top: 0;
+            
+        }
+        &__text-container {
+            transform: translate(0px);
+            text-align: start;
+            padding: 0 1rem;
+            max-width: 50%;
+            margin-right: auto;
+            gap: 2rem;
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 3.35rem;
+        }
+        &__paragraph {
+            color: variables.$Grayish-Blue;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: 400;
+            max-width: 82%;
+        }
+    }
+    
+}
