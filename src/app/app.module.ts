@@ -13,6 +13,7 @@ import { WhyEasebankComponent } from './main/why-easebank/why-easebank.component
 import { BenefitsComponent } from './main/why-easebank/benefits/benefits.component';
 import { ArticlesComponent } from './main/articles/articles.component';
 import { ArticleComponent } from './main/articles/article/article.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ArticleComponent } from './main/articles/article/article.component';
     WhyEasebankComponent,
     BenefitsComponent,
     ArticlesComponent,
-    ArticleComponent
+    ArticleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

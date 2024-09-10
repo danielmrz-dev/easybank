@@ -1,0 +1,19 @@
+@use "../../../styles/variables";
+
+.articles {
+    padding: 5.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: variables.$Very-Light-Gray;
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

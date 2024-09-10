@@ -1,0 +1,46 @@
+@use "../../styles/variables";
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+.footer {
+    background-color: variables.$Dark-Blue;
+    @include flex(column);
+    gap: 2rem;
+    padding: 3rem 0;
+    &__logo-and-socials {
+        @include flex(column);
+        gap: 1.75rem;
+    }
+    &__socials-list {
+        list-style: none;
+        @include flex(row);
+        gap: 1.2rem;
+    }
+    &__useful-links-container {
+        @include flex(column);
+        gap: 1rem;
+    }
+    &__useful-links {
+        list-style-type: none;
+        @include flex(column);
+        gap: 1rem;
+    }
+    &__useful-link {
+        text-decoration: none;
+        color: variables.$Light-Grayish-Blue;
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    &__button-and-rights{
+        @include flex(column);
+        gap: 1.25rem;
+        p {
+            color: variables.$Grayish-Blue;
+            font-size: 0.9rem;
+        }
+    }
+}
