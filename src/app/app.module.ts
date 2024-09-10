@@ -11,6 +11,8 @@ import { NextGenComponent } from './main/next-gen/next-gen.component';
 import { ButtonComponent } from './button/button.component';
 import { WhyEasebankComponent } from './main/why-easebank/why-easebank.component';
 import { BenefitsComponent } from './main/why-easebank/benefits/benefits.component';
+import { ArticlesComponent } from './main/articles/articles.component';
+import { ArticleComponent } from './main/articles/article/article.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BenefitsComponent } from './main/why-easebank/benefits/benefits.compone
     NextGenComponent,
     ButtonComponent,
     WhyEasebankComponent,
-    BenefitsComponent
+    BenefitsComponent,
+    ArticlesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
