@@ -21,15 +21,17 @@
     .benefits {
         align-items: start;
         text-align: start;
-        gap: 1.25rem;
+        gap: 2.5rem;
         &__title {
             font-weight: 400;
             font-size: 1.5rem;
+            padding: 0.2rem 0;
         }
         &__paragraph {
             color: variables.$Grayish-Blue;
             line-height: 1.6;
             font-size: 1rem;
+            transform: translateY(-14px);
         }
     }
 }
