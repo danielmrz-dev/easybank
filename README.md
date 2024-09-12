@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Frontend Mentor solution URL: [Link]()
+- Frontend Mentor solution URL: [Link](https://www.frontendmentor.io/solutions/easybank-landing-page-build-w-angular-sass-and-typescript-W5jfSOtC57)
 - Live Site URL: [Link](https://easybank-blond.vercel.app/)
 
 ## My process
