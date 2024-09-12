@@ -8,9 +8,11 @@
 
 .footer {
     background-color: variables.$Dark-Blue;
-    @include flex(column);
-    gap: 2rem;
-    padding: 3rem 0;
+    &__container {
+        @include flex(column);
+        gap: 2rem;
+        padding: 3rem 0;
+    }
     &__logo-and-socials {
         @include flex(column);
         gap: 1.75rem;
@@ -41,6 +43,50 @@
         p {
             color: variables.$Grayish-Blue;
             font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__container {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            max-width: 1140px;
+            margin: auto;
+            padding: 3rem 0;
+        }
+        &__logo-and-socials {
+            @include flex(column);
+            width: fit-content;
+            align-items: start;
+            gap: 3.25rem;
+        }
+        &__socials-list {
+            @include flex(row);
+            gap: 1rem;
+        }
+        &__useful-links-container {
+            @include flex(row);
+            justify-content: center;
+            gap: 8rem;
+        }
+        &__useful-links {
+            @include flex(column);
+            align-items: start;
+            gap: .8rem;
+        }
+        &__useful-link {
+            font-weight: 300;
+            font-size: 0.9rem;
+
+        }
+        &__button-and-rights{
+            align-items: end;
+            p {
+                color: variables.$Grayish-Blue;
+                font-size: 0.9rem;
+            }
         }
     }
 }

@@ -1,11 +1,13 @@
 <section class="articles">
-    <h3 class="articles__title">Latest Articles</h3>
-    <div class="articles__list">
-        <app-article *ngFor="let article of articlesList"
-            [image]="article.image"
-            [author]="article.author"
-            [title]="article.title"
-            [content]="article.content"
-        ></app-article>
+    <div class="articles__container">
+        <h3 class="articles__title">Latest Articles</h3>
+        <div class="articles__list">
+            <app-article *ngFor="let article of articlesList"
+                [image]="article.image"
+                [author]="article.author"
+                [title]="article.title"
+                [content]="article.content"
+            ></app-article>
+        </div>
     </div>
 </section>

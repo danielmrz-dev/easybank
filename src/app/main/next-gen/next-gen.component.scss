@@ -34,11 +34,9 @@
 @media screen and (min-width: 768px) {
     .next-gen {
         background: url(../../../assets/bg-intro-desktop.svg) center right no-repeat;
-        background-position: 43vw -29vh;
+        background-position: 43vw -22vh;
         margin-bottom: 0;
-        overflow: hidden;
         &__content {
-            position: relative;
             max-width: 1140px;
             min-height: 655px;
             display: flex;
@@ -47,9 +45,9 @@
             margin: auto;
         }
         &__image-mockups {
-            width: 70%;
+            width: 55%;
             position: absolute;
-            right: -300px;
+            right: -140px;
             top: 0;
         }
         &__text-container {

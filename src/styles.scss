@@ -6,3 +6,7 @@
     box-sizing: border-box;
     font-family: variables.$Public-Sans;
 }
+
+body, html {
+    overflow-x: hidden;
+}

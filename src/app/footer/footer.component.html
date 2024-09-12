@@ -1,40 +1,42 @@
 <footer class="footer">
-    <div class="footer__logo-and-socials">
-        <img src="logo-white.svg" alt="" class="footer__logo">
-        <ul class="footer__socials-list">
-            <li class="footer__social-media-link" *ngFor="let image of socialMediaImages">
-                <a href="#" class="footer__social-media-link">
-                    <img [src]="image" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer__useful-links-container">
-        <ul class="footer__useful-links one">
-            <li>
-                <a href="#" class="footer__useful-link">About Us</a>
-            </li>
-            <li>
-                <a href="#" class="footer__useful-link">Contact</a>
-            </li>
-            <li>
-                <a href="#" class="footer__useful-link">Blog</a>
-            </li>
-        </ul>
-        <ul class="footer__useful-links two">
-            <li>
-                <a href="#" class="footer__useful-link">Careers</a>
-            </li>
-            <li>
-                <a href="#" class="footer__useful-link">Support</a>
-            </li>
-            <li>
-                <a href="#" class="footer__useful-link">Privacy Policy</a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer__button-and-rights">
-        <app-button></app-button>
-        <p>&copy;Easybank. All Rights Reserved</p>
+    <div class="footer__container">
+        <div class="footer__logo-and-socials">
+            <img src="logo-white.svg" alt="" class="footer__logo">
+            <ul class="footer__socials-list">
+                <li class="footer__social-media-link" *ngFor="let image of socialMediaImages">
+                    <a href="#" class="footer__social-media-link">
+                        <img [src]="image" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__useful-links-container">
+            <ul class="footer__useful-links one">
+                <li>
+                    <a href="#" class="footer__useful-link">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__useful-link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__useful-link">Blog</a>
+                </li>
+            </ul>
+            <ul class="footer__useful-links two">
+                <li>
+                    <a href="#" class="footer__useful-link">Careers</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__useful-link">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__useful-link">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__button-and-rights">
+            <app-button></app-button>
+            <p>&copy;Easybank. All Rights Reserved</p>
+        </div>
     </div>
 </footer>

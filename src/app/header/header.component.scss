@@ -1,13 +1,18 @@
 @use "../../styles/variables";
 
-.header__container {
-    padding: 1.5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
     background-color: variables.$White;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    &__container {
+        padding: 1.5rem 1rem;
+        display: flex;
+        align-items: center;
+        background-color: variables.$White;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
 }
 
 app-button {

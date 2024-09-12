@@ -4,8 +4,13 @@
     padding: 5.5rem 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    // gap: 2rem;
     background-color: variables.$Very-Light-Gray;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
     &__title {
         text-align: center;
         font-size: 2rem;
@@ -15,5 +20,26 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .articles {
+        align-items: center;
+        padding: 5.5rem 1.5rem 3.75rem;
+        &__container {
+            max-width: 1140px;
+            gap: 3rem;
+        }
+        &__title {
+            text-align: start;
+            font-size: 2.75rem;
+            font-weight: 300;
+        }
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
     }
 }

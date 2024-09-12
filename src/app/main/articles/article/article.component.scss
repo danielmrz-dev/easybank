@@ -35,3 +35,28 @@
         line-height: 1.4;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .article {
+        max-width: 260px;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.75rem 2rem;
+        flex-grow: 1;
+    }
+    &__author {
+        font-size: 0.65rem;
+        color: variables.$Grayish-Blue;
+    }
+    &__title {
+        font-weight: 400;
+    }
+    &__content {
+        color: variables.$Grayish-Blue;
+        font-size: .8rem;
+        line-height: 1.4;
+    }
+}
+}
