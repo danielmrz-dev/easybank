@@ -28,6 +28,11 @@
     }
     &__title {
         font-weight: 400;
+        transition: color .2s ease;
+        cursor: pointer;
+        &:hover {
+            color: variables.$Lime-Green;
+        }
     }
     &__content {
         color: variables.$Grayish-Blue;

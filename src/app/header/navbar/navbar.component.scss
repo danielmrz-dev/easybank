@@ -2,24 +2,43 @@
 
 .navbar {
     position: absolute;
-    right: 0;
-    top: 50px;
-    width: 100%;
+    right: 6.25%;
+    left: 6.25%;
+    top: 80px;
+    width: 87.5%;
     background-color: variables.$White;
-    box-shadow: 0 20px 100px #0000003a;
-    border-radius: 10px;
+    box-shadow: 0 200px 200px #00000062,
+                0 -10px 5px #00000062;
+    border-radius: 5px;
     &__list {
         list-style-type: none;
-        padding: 1rem;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         align-items: center;
     }
     &__list-item {
         a {
+            font-size: 1.1rem;
+            font-weight: 500;
             text-decoration: none;
             color: #000000;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                background-color: variables.$Lime-Green;
+                height: 3px;
+                transform: scaleX(0);
+                transition: transform .3s ease;
+            }
+            &:hover::after{
+                transform: scaleX(100%);
+            }
         }
     }
 }
@@ -41,8 +60,13 @@
         }
         &__list-item {
             a {
+                font-size: 1rem;
+                font-weight: 400;
                 text-decoration: none;
                 color: variables.$Grayish-Blue;
+                &::after {
+                    bottom: -28px;
+                }
             }
         }
     }

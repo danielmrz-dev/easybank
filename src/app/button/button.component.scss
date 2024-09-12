@@ -8,9 +8,10 @@
     background-image: linear-gradient(90deg, variables.$Lime-Green, variables.$Bright-Cyan);
     font-weight: 600;
     letter-spacing: 0.5px;
-    transition: scale .2s ease;
+    transition: scale .2s ease, filter .2s ease;
     cursor: pointer;
     &:hover {
-        scale: 1.05;
+        scale: 1.03;
+        filter: brightness(120%);
     }
 }

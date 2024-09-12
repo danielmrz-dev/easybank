@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+@mixin bgShift($imageWhite, $imageGreen) {
+    background: url($imageWhite) center center no-repeat;
+    transition: background .2s ease;
+    &:hover {
+        background: url($imageGreen) center center no-repeat;
+    }
+}
+
 .footer {
     background-color: variables.$Dark-Blue;
     &__container {
@@ -16,6 +24,28 @@
     &__logo-and-socials {
         @include flex(column);
         gap: 1.75rem;
+    }
+    &__social-media-link {
+        a {
+            img {
+                opacity: 0;
+            }
+        }
+        &:nth-child(1) {
+            @include bgShift("../../assets/icon-facebook.svg", "../../assets/icon-facebook-green.svg")
+        }
+        &:nth-child(2) {
+            @include bgShift("../../assets/icon-youtube.svg", "../../assets/icon-youtube-green.svg")
+        }
+        &:nth-child(3) {
+            @include bgShift("../../assets/icon-twitter.svg", "../../assets/icon-twitter-green.svg")
+        }
+        &:nth-child(4) {
+            @include bgShift("../../assets/icon-pinterest.svg", "../../assets/icon-pinterest-green.svg")
+        }
+        &:nth-child(5) {
+            @include bgShift("../../assets/icon-instagram.svg", "../../assets/icon-instagram-green.svg")
+        }
     }
     &__socials-list {
         list-style: none;
@@ -36,6 +66,10 @@
         color: variables.$Light-Grayish-Blue;
         font-weight: 300;
         font-size: 0.9rem;
+        transition: color .2s ease;
+        &:hover {
+            color: variables.$Lime-Green;
+        }
     }
     &__button-and-rights{
         @include flex(column);
